@@ -1,0 +1,155 @@
+.previewContainer {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: visible;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.editButton {
+  background: none;
+  border: 2px solid #2980b9;
+  color: #2980b9;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media print {
+  .editButton {
+    display: none;
+  }
+}
+
+.sidebar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebarSection {
+  margin-bottom: 2rem;
+}
+
+.sidebarSection h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #7f8c8d;
+  padding-bottom: 0.25rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.mainContent {
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #bdc3c7;
+}
+
+.item {
+  margin-bottom: 1.25rem;
+}
+
+.item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.item span {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.25rem 0 0;
+}
+
+.list, .socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li, .socialList li {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+}
+.list li, .socialList li > a{
+  color: white;
+
+
+}
+
+.list li::before, .socialList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #f3f5f7;
+}
+
+@media screen and (max-width: 768px) {
+  .previewContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .mainContent {
+    padding: 1.5rem;
+  }
+}

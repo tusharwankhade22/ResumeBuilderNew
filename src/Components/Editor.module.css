@@ -1,0 +1,50 @@
+.editor {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden; /* prevent child scrollbars */
+}
+
+.sidebar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.sidebar ul li:hover {
+    background-color: #bee0f7;
+    color: #0b86e5;
+    font-weight: 500;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    display: block;
+}
+
+.main {
+    width: 80%;
+    padding: 1rem;
+    background-color: #fff;
+    overflow: auto;
+}

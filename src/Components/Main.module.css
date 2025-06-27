@@ -1,0 +1,55 @@
+.hero {
+    text-align: center;
+    padding: 1.8rem 2rem;
+    background: #fdf8f7;
+}
+  
+.heroTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+.heroText {
+    font-size: 1.7rem;
+    color: #555;
+}
+  
+.createResumeLarge {
+    margin-top: 1.5rem;
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .createResumeLarge:hover{
+    background-color: white;
+    color: #ff5c5c;
+    border: 1px solid #ff5c5c;
+    transition: 0.4s;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #fdf8f7;
+  }
+  
+  .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature h3{
+    font-size: 1.3rem;
+  }
+  .feature p{
+    font-size: 1rem;
+  }
+  

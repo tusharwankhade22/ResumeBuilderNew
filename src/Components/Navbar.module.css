@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+  
+.logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navLinks li:hover{
+    background-color: #ff5c5c;
+    padding: 9px;
+    color: #fff;
+    border-radius: 3px;
+}
+.navLinks li{
+    color: black;
+    padding: 9px;
+    text-decoration: underline;
+}
+
+.authButtons button {
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #ff5c5c;
+    cursor: pointer;
+  }
+  
+.createResume {
+    
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.createResume:hover{
+    background-color: white;
+    color: #ff5c5c;
+    transition: 0.9s;
+}
+  
